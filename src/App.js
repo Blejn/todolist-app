@@ -1,11 +1,20 @@
 import React from 'react';
-
+import {Container,Text, Heading} from '@chakra-ui/react'
+import Add from './components/Add/Add';
+import TodoList from './components/List/TodoList';
+import Filter from './components/Filter/Filter';
 
 function App() {
   return (
-    <div className="App">
-    <h1>App</h1>
-    </div>
+  
+    <Container width="100%" height="100vh" boxShadow='dark-lg'  maxW="100vw"  bgGradient="linear-gradient(to right, #fc5c7d, #6a82fb);" >
+   <Heading my={4} align="center" color="white">TO DO LIST</Heading>
+ <Add/>
+ <Filter/>
+ <TodoList/>
+ 
+    </Container>
+   
   );
 }
 
