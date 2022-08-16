@@ -7,11 +7,11 @@ import Filter from './components/Filter/Filter';
 function App() {
   return (
   
-    <Container width="100%" height="100vh" boxShadow='dark-lg'  maxW="100vw"  bgGradient="linear-gradient(to right, #fc5c7d, #6a82fb);" >
-   <Heading my={4} align="center" color="white">TO DO LIST</Heading>
+    <Container  width="100%" height="100vh" boxShadow='dark-lg' maxH="100vh"  maxW="100vw"  bgGradient="linear-gradient(to right, #fc5c7d, #6a82fb);" >
+   <Heading  align="center" color="white">TO DO LIST</Heading>
  <Add/>
  <Filter/>
- <TodoList/>
+ <TodoList />
  
     </Container>
    
