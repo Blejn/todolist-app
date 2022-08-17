@@ -22,9 +22,9 @@ export const setFilter = filter=>({
     payload:{filter}
 
 });
-export const deleteTodo = id =>({
+export const deleteTodo = key =>({
     type: DELETE_TODO,
-    payload:{id}
+    payload:key
 }
     
 );

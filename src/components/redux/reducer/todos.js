@@ -29,26 +29,28 @@ const todos = (state=initialState,action) => {
         });
         return {todos}
       }
+
+
+
+
     //REMOVING TASK
       case DELETE_TODO:{
-         const{ id } = action.payload;
-        // const todos = state.todos.filter(obj =>{
-        //  return obj.id === id ? {...obj , id: !obj.id}:obj
-        // });
+        //  const{ id } = action.payload;
+   
           
-        const todos = state.todos.filter(obj =>{
-           const{ id } = action.payload;
-           console.log(obj)
-          return obj.id === id ?{...obj, id: !obj.id} : obj
+        // const todos = state.todos.filter(obj =>{
+        //    const{ id } = action.payload;
+        //    console.log(obj)
+        //   return obj.id === id ?{...obj, id: !obj.id} : obj
         
-        });
+        // });
   
-        return {todos}
-    //     const deleteTodo= state.todos.filter((id)=> id !== action.payload)
-    //  return{...state.todos,
-    //    todos:deleteTodo}
+        return {
+          todos:[...state,state.todos.filter((todo,id)=> id !== action.payload)]
+
     
       }
+    }
 
     
     default:{

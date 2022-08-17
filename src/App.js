@@ -8,8 +8,8 @@ function App() {
   return (
   
     <Container  width="100%" height="100vh" boxShadow='dark-lg' maxH="100vh"  maxW="100vw"  bgGradient="linear-gradient(to right, #fc5c7d, #6a82fb);" >
-   <Heading  align="center" color="white">TO DO LIST</Heading>
- <Add/>
+   <Heading marginBottom={10}  align="center" color="white">TO DO LIST</Heading>
+ <Add marginBottom={10}/>
  <Filter/>
  <TodoList />
  

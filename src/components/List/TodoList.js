@@ -13,9 +13,9 @@ const TodoList = () => {
   return (
  
    <Box textAlign="center" my="4" >
-    { filterTodos.length ? todos.todos.map(todo => (
+    { filterTodos.length ? todos.todos.map((todo,idx) => (
  
-      <Todo key={todo.id} todo={todo}/>
+      <Todo key={todo.id} todo={todo} idx={idx}/>
    
     ))
     
